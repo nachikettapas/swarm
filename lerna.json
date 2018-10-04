@@ -1,0 +1,23 @@
+{
+  "lerna": "2.5.1",
+  "packages": [
+    "packages/api",
+    "packages/client",
+    "packages/clock",
+    "packages/db",
+    "packages/rdt",
+    "packages/react",
+    "packages/regular-grammar",
+    "packages/ron-grammar",
+    "packages/ron-uuid",
+    "packages/ron"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "commands": {
+    "publish": {
+      "message": "chore(release): publish %s"
+    }
+  },
+  "version": "0.1.2"
+}

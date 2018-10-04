@@ -1,0 +1,27 @@
+# Build products
+dist/*
+*.app.js
+*.min.js
+# byproducts
+*.log
+*.diff
+*.patch
+*.cpuprofile
+.swarm
+.store
+*.swp
+# dev stuff
+.idea
+node_modules
+coverage
+lib
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+packages/playground
+packages/examples
+packages/chat

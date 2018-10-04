@@ -1,0 +1,38 @@
+{
+  "name": "@swarm/clock",
+  "version": "0.1.1",
+  "description": "A simple logical clock generating RON UUIDs",
+  "author": "Victor Grishchenko <victor.grishchenko@gmail.com>",
+  "contributors": [
+    "Oleg Lebedev <ole6edev@gmail.com> (https://github.com/olebedev)"
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "@swarm/ron-uuid": "^0.1.1"
+  },
+  "files": [
+    "lib/*.js",
+    "lib/*.js.flow"
+  ],
+  "scripts": {
+    "build": "yarn run build:clean && yarn run build:lib && yarn run build:flow",
+    "build:clean": "../../node_modules/.bin/rimraf lib",
+    "build:lib": "../../node_modules/.bin/babel -d lib src --ignore '**/__tests__/**'",
+    "build:flow": "../../node_modules/.bin/flow-copy-source -v -i '**/__tests__/**' src lib"
+  },
+  "keywords": [
+    "swarm",
+    "replicated",
+    "ron",
+    "logical clock",
+    "protocol"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}
