@@ -55,7 +55,7 @@ export function ron2js(rawFrame: string): { [string]: Atom } {
     length: 0,
     id: '',
     uuid: ZERO,
-    type: 'set',
+    type: 'parity',
     version: '',
     values: function() {
       return Array.prototype.slice.call(this);
