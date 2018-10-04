@@ -1,4 +1,4 @@
-# Swarm 2.0 real-time sync [![BuildStatus](https://travis-ci.org/gritzko/swarm.svg?branch=master)](https://travis-ci.org/gritzko/swarm)
+# Swarm 2.0 real-time sync [![BuildStatus](https://travis-ci.org/gritzko/swarm.svg?branch=master)](https://travis-ci.org/nachikettapas/swarm)
 
 <img align="right" width="400" src="https://i.imgur.com/hqGwft1.png">
 
