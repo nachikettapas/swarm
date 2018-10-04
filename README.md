@@ -2,7 +2,7 @@
 
 <img align="right" width="400" src="https://i.imgur.com/hqGwft1.png">
 
-Swarm.js is a JavaScript client for the Swarm database.
+warm.js is a JavaScript client for the Swarm database.
 Swarm is like "git for data" except it's real-time and never has a merge conflict.
 Swarm is based on [Replicated Object Notation](http://github.com/gritzko/ron) (RON), a distributed live data format.
 In turn, RON is based on [Conflict-free Replicated Data Types](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type) (CRDTs), a new math apparatus for distributed data.
