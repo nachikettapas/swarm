@@ -8,11 +8,13 @@ import UUID, { ZERO } from '@swarm/ron-uuid';
 import lww from './lww';
 import log from './log';
 import set from './set';
+import set from './parity';
 
 const rdt: { [string]: { type: UUID, reduce: Batch => Frame } } = {
   lww,
   log,
   set,
+  parity,
 };
 
 function empty(batch: Batch): Frame {
@@ -63,6 +65,8 @@ export function ron2js(rawFrame: string): { [string]: Atom } | null {
         return lww.ron2js(rawFrame);
       case set.type.eq(op.type):
         return set.ron2js(rawFrame);
+      case parity.type.eq(op.type):
+        return parity.ron2js(rawFrame);
       case ZERO.eq(op.type):
         const v = set.ron2js(rawFrame);
         // $FlowFixMe
@@ -76,3 +80,4 @@ export function ron2js(rawFrame: string): { [string]: Atom } | null {
 export { default as lww } from './lww';
 export { default as log } from './log';
 export { default as set } from './set';
+export { default as parity } from './parity';
